@@ -1,0 +1,187 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+            overflow: hidden; 
+            background-size: cover;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #1009d4;
+            text-decoration: underline;
+        }
+        
+        .main{
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            background-size: cover;
+            position: relative; 
+            width: 95%; 
+            height: 650px; 
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Base background (gradient) */
+            background-image: url('background_2.png'); /* Top background image */
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-blend-mode: overlay; 
+            border: 1px solid #ddd;
+            border-radius: 2%;
+            
+        }
+        .hero{
+            display: flex;
+        }
+        .section1 {
+            color: #fff;
+            background-color: rgb(117, 117, 115);
+            background: rgba(255, 255, 255, 0.2);
+            width: 40%;
+            height:65%;
+            margin-top: 60px;
+            margin-left: 4%;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 5%;
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 12px 16px rgba(14, 14, 14, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .hero img {
+            width: auto; 
+            height: auto;
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-top:5% ;
+        }
+        .text{
+            margin-top:5% ;
+            margin-bottom:5% ;
+        }
+        .text p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .section2{
+            color: #fff;
+            background:transparent;
+            width:40%;
+            margin-top: 5%;
+            border-radius: 5%;
+            margin-left: 10%;
+        }
+        .text2{
+            margin-top: 40px;
+        }
+        .section2 button{
+            margin-top:60px ;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+    
+        }
+        .section2 button:hover{
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 600px){
+            .hero{
+                display: flex;
+                flex-direction: column;
+            }
+            .section1{
+                width: 70%;
+                margin:auto ;
+                margin-top: 10px;
+                height: auto;
+            }
+            .section2{
+                margin-top: 2px;
+                width: 80%;
+            }
+            .hero img {
+                width: 35%; 
+                height: auto;
+                margin-top: 2px;
+        }
+        .text{
+            margin-top:5% ;
+            margin-bottom:1% ;
+        }
+    }
+
+/* Add these styles to your existing CSS file */
+
+/* Form styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+  }
+  
+  #contact-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  #contact-form button {
+    margin-top: 10px;
+  }
+  
+  /* Adjustments for better responsiveness */
+  @media (max-width: 600px) {
+    .section2 form {
+      width: 100%;
+    }
+  
+    .section2 input,
+    .section2 textarea {
+      width: 100%;
+    }
+  }
+  
+  
+ 
